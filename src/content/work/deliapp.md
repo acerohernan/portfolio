@@ -1,13 +1,12 @@
 ---
-title: Duvet Genius
-publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+title: DeliApp
+publishDate: 2019-10-02 00:00:00
+img: /assets/projects/deliapp.jpg
+img_alt: Soft pink and baby blue water ripples together in a subtle texture.
 description: |
-  We developed a virtual showcase for the softest bedding imaginable.
+  Delivery app made by React Native, Redux, Typescript, NodeJs, ExpressJs and MongoDB.
 tags:
   - Design
-  - Dev
   - Branding
 ---
 
