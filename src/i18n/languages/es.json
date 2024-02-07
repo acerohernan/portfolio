@@ -1,4 +1,23 @@
 {
-  "nav.home": "Casa",
-  "nav.work": "Trabajos"
+  "nav.home": "Principal",
+  "nav.work": "Trabajos",
+  "header.title": "Hola, mi nombre es Hernan Acero",
+  "header.subtitle": "Desarrollador Full-stack que actualmente trabaja con React.js, Node.js y Golang.",
+  "header.skills.developer": "Desarrollador",
+  "header.skills.speaker": "Orador",
+  "skills.1.title": "Full-stack",
+  "skills.1.description": "Desde el diseño del sistema de aplicación hasta su despliegue en la nube.",
+  "skills.2.title": "Experimentado",
+  "skills.2.description": "Tengo más de 3 años construyendo, segurizando y escalando aplicaciones empresariales.",
+  "skills.3.title": "Buenas prácticas",
+  "skills.3.description": "Aplicando siempre las mejores prácticas de mantenimiento de código, testing y seguridad.",
+  "about.title": "Sobre mí",
+  "about.commingsoon": "En construcción...",
+  "about.description": "Si deseas saber más sobre mí, he creado un video de 2 minutos con una pequeña introducción sobre mi persona y toda la experiencia que tengo en el sector technológico.",
+  "work.title": "Proyectos",
+  "work.description": "Lista de algunos de mis proyectos de código abierto más interesantes",
+  "work.viewall": "Ver todos",
+  "experience.title": "Experiencia profesional",
+  "contact.calltoaction": "Interesado en contactarme?",
+  "contact.messageme": "Envíame un email"
 }

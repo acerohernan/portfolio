@@ -1,4 +1,23 @@
 {
   "nav.home": "Home",
-  "nav.work": "Work"
+  "nav.work": "Work",
+  "header.title": "Hello, my name is Hernan Acero",
+  "header.subtitle": "I am a Full-stack Developer who is currently working with React.js, Node.js and Golang.",
+  "header.skills.developer": "Developer",
+  "header.skills.speaker": "Speaker",
+  "skills.1.title": "Full-stack",
+  "skills.1.description": "From designing the application system to deploying it in the cloud.",
+  "skills.2.title": "Experienced",
+  "skills.2.description": "I have more than 3 years building, securing and scaling enterprise applications.",
+  "skills.3.title": "Best practices",
+  "skills.3.description": "Always applying the best practices of code maintainability, testing, and security.",
+  "about.title": "About me",
+  "about.commingsoon": "Comming soon...",
+  "about.description": "If you want to know more about me, I created a 2 minute video with a brief introduction of myself and all the experiencie that I have in the tech field.",
+  "work.title": "Selected Work",
+  "work.description": "Take a look below at some of my featured open source projects",
+  "work.viewall": "View all",
+  "experience.title": "Work experience",
+  "contact.calltoaction": "Interested in working together?",
+  "contact.messageme": "Send Me a Message"
 }
