@@ -27,7 +27,8 @@ const projects = (await getCollection('work'))
 					title="Hello, my name is Hernan Acero"
 					tagline="I am a Full-stack Developer who is currently working with React.js, Node.js and Golang."
 					align="start"
-				>
+				>	
+					<a class="i18n-link" href="/es/">Ver en Español</a>
 					<div class="roles">
 						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
 						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
@@ -286,4 +287,9 @@ const projects = (await getCollection('work'))
 		box-shadow: var(--shadow-sm);
 	}
 
+	.i18n-link {
+		font-size: 1rem;
+		text-decoration: underline;
+		cursor: pointer;
+	}
 </style>
