@@ -25,7 +25,11 @@ const iconLinks: {
   href: string;
   icon: keyof typeof iconPaths;
 }[] = [
-  { label: 'Curriculum Vitae', href: '/cv.pdf', icon: 'cv-logo' },
+  {
+    label: 'Curriculum Vitae',
+    href: translatedPath('/cv.pdf'),
+    icon: 'cv-logo',
+  },
   {
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/hernan-acero/',
