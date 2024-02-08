@@ -8,9 +8,14 @@ import PortfolioPreview from '../../components/PortfolioPreview.astro';
 import Hero from '../../components/Hero.astro';
 import Grid from '../../components/Grid.astro';
 
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
 const projects = (await getCollection('work')).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <BaseLayout
@@ -20,8 +25,8 @@ const projects = (await getCollection('work')).sort(
   <div class="stack gap-20">
     <main class="wrapper stack gap-8">
       <Hero
-        title="My Work"
-        tagline="Take a look below at some of my featured open source projects."
+        title={t('work.title')}
+        tagline={t('work.description')}
         align="start"
       />
       <Grid variant="offset">
