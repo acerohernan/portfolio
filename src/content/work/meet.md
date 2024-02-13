@@ -3,6 +3,7 @@ title: Meet
 publishDate: 2020-03-04 00:00:00
 img: /assets/projects/meet/banner.jpg
 img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+lang: en
 description: |
   Full-stack video conference application with multi-region deployment. Frontend in React.js and backend with Go.
 tags:

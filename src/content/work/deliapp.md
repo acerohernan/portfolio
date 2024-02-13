@@ -3,6 +3,7 @@ title: DeliApp
 publishDate: 2019-10-02 00:00:00
 img: /assets/projects/deliapp/banner.jpg
 img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+lang: en
 description: |
   Delivery app made by React Native, Redux, Typescript, NodeJs, ExpressJs and MongoDB.
 tags:
