@@ -42,6 +42,11 @@ const iconLinks: {
     icon: 'youtube-logo',
   },
 ];
+
+const pathName =
+  Astro.url.pathname != '/' && Astro.url.pathname.endsWith('/')
+    ? Astro.url.pathname.slice(0, Astro.url.pathname.length - 1)
+    : Astro.url.pathname;
 ---
 
 <nav>
@@ -62,13 +67,13 @@ const iconLinks: {
         textLinks.map(({ label, href }) => (
           <li>
             <a
-              aria-current={Astro.url.pathname === href}
+              aria-current={pathName === href}
               class:list={[
                 'link',
                 {
                   active:
-                    Astro.url.pathname === href ||
-                    (href !== l('/') && Astro.url.pathname.startsWith(href)),
+                    pathName === href ||
+                    (href !== l('/') && pathName.startsWith(href)),
                 },
               ]}
               href={href}
@@ -100,13 +105,13 @@ const iconLinks: {
         textLinks.map(({ label, href }) => (
           <li>
             <a
-              aria-current={Astro.url.pathname === href}
+              aria-current={pathName === href}
               class:list={[
                 'link',
                 {
                   active:
-                    Astro.url.pathname === href ||
-                    (href !== l('/') && Astro.url.pathname.startsWith(href)),
+                    pathName === href ||
+                    (href !== l('/') && pathName.startsWith(href)),
                 },
               ]}
               href={href}
