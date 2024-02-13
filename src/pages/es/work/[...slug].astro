@@ -1,5 +1,5 @@
 ---
-import { astroI18n, t, l } from 'astro-i18n';
+import { t, l } from 'astro-i18n';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
 import BaseLayout from '../../../layouts/BaseLayout.astro';
@@ -17,10 +17,7 @@ interface Props {
 // Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
 // https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
 export async function getStaticPaths() {
-  const work = await getCollection(
-    'work',
-    ({ data }) => data.lang === astroI18n.locale,
-  );
+  const work = await getCollection('work', ({ data }) => data.lang === 'es');
   return work.map((entry) => ({
     params: { slug: entry.slug.slice(entry.slug.indexOf('/') + 1) },
     props: { entry },
