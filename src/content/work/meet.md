@@ -2,7 +2,7 @@
 title: Meet
 publishDate: 2020-03-04 00:00:00
 img: /assets/projects/meet/banner.jpg
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+img_alt: Principal screen before to enter a meeting in the application
 lang: en
 description: |
   Full-stack video conference application with multi-region deployment. Frontend in React.js and backend with Go.
@@ -32,7 +32,7 @@ The main goal of the project is to be a scalable video conferencing application,
 
 - Allow participants to create a call from anywhere in the world.
 - Allow participants to have bi-directional communication in real-time with the server.
-- Allow participants to send a receive media (audio and video) from all the participants connected in the room.
+- Allow participants to send and receive media (audio and video) from all the participants connected in the room.
 - Allow room admins to eject or mute any participant.
 - Allow participants to see all the connected participants in real-time.
 - Allow guests to request access to the call in real-time.
@@ -54,16 +54,16 @@ Once I had the features that I wanted to implement and all the technical challen
 
 1. Client: A performant front-end application that can provide a good user experience and support the communication with the server.
 2. SFU: The Selective Forwarding Unit, is the principal component that is the server in charge of keeping the state of all connected participants and forwarding all the real-time messages, audio, and video to everyone.
-3. InMemory Database: For real-time communication, I needed a fast and efficient database that can store all the state that I wanted to share across all servers, for example, which one is hosting a specific room or which one has a connection with a specific participant. Knowing that the state doesn’t need to be persistent and it has to be only available while a room is active, I chose to use an in-memory database like Redis.
+3. In-memory Database: For real-time communication, I needed a fast and efficient database that can store all the state that I wanted to share across all servers, for example, which one is hosting a specific room or which one has a connection with a specific participant. Knowing that the state doesn’t need to be persistent and it has to be only available while a room is active, I chose to use an in-memory database like Redis.
 4. Message Queue: For having the ability to scale each server horizontally and support the maximum amount of participants connected at the same time in a specific room, each server will be subscribed to a specific queue that will receive real-time messages from other servers. This approach will allow balance the load of incoming messages avoiding overloading the server.
 
-#### Cloud-specific system design
+#### AWS system design
 
 After the system design is completed it’s time to choose the cloud provider and what components will help me create the infrastructure.
 
 <img src="/assets/projects/meet/cloud-diagram.jpeg" alt="meet cloud-specific system design diagram" />
 
-This diagram shows all the principal infrastructure components for deploying the system to the cloud. Now, I will explain why I chose them. 
+This diagram shows all the principal infrastructure components for deploying the system to AWS. Now, I will explain why I chose them. 
 
 First, the entry point for everything will be Route53 for DNS resolution. 
 
