@@ -4,10 +4,8 @@ import { t, l } from 'astro-i18n';
 import Icon from './Icon.astro';
 import type { iconPaths } from './IconPaths';
 
-import type { i18nKey } from '../i18n/types';
-
 /** Main menu items */
-const textLinks: { label: i18nKey; href: string }[] = [
+const textLinks: { label: string; href: string }[] = [
   { label: 'nav.home', href: l('/') },
   { label: 'nav.work', href: l('/work') },
 ];
