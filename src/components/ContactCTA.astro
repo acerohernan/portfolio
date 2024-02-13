@@ -1,11 +1,8 @@
 ---
+import { t } from 'astro-i18n';
+
 import CallToAction from './CallToAction.astro';
 import Icon from './Icon.astro';
-
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 ---
 
 <aside>

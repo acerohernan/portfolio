@@ -1,19 +1,16 @@
 ---
+import { t, astroI18n } from 'astro-i18n';
+
 import Hero from './Hero.astro';
 import Icon from './Icon.astro';
 import Pill from './Pill.astro';
-
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
 ---
 
 <header class="hero">
   <Hero title={t('header.title')} tagline={t('header.subtitle')} align="start">
     {
-      lang === 'en' ? (
-        <a class="i18n-link" href="/es/">
+      astroI18n.locale === 'en' ? (
+        <a class="i18n-link" href="/es">
           Ver en Español
         </a>
       ) : (

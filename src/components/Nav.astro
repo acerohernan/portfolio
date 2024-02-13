@@ -1,22 +1,15 @@
 ---
+import { t, l } from 'astro-i18n';
+
 import Icon from './Icon.astro';
 import type { iconPaths } from './IconPaths';
 
-import {
-  getLangFromUrl,
-  useTranslations,
-  useTranslatedPath,
-} from '../i18n/utils';
 import type { i18nKey } from '../i18n/types';
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
-const translatedPath = useTranslatedPath(lang);
 
 /** Main menu items */
 const textLinks: { label: i18nKey; href: string }[] = [
-  { label: 'nav.home', href: translatedPath('/', lang) },
-  { label: 'nav.work', href: translatedPath('/work', lang) },
+  { label: 'nav.home', href: l('/') },
+  { label: 'nav.work', href: l('/work') },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
@@ -27,7 +20,7 @@ const iconLinks: {
 }[] = [
   {
     label: 'Curriculum Vitae',
-    href: translatedPath('/cv.pdf'),
+    href: l('/cv.pdf'),
     icon: 'cv-logo',
   },
   {
@@ -55,7 +48,7 @@ const iconLinks: {
 
 <nav>
   <div class="menu-header">
-    <a href={translatedPath('/', lang)} class="site-title"> Hernan Acero</a>
+    <a href={l('/')} class="site-title"> Hernan Acero</a>
     <menu-button>
       <template>
         <button class="menu-button" aria-expanded="false">
@@ -77,8 +70,7 @@ const iconLinks: {
                 {
                   active:
                     Astro.url.pathname === href ||
-                    (href !== translatedPath('/', lang) &&
-                      Astro.url.pathname.startsWith(href)),
+                    (href !== l('/') && Astro.url.pathname.startsWith(href)),
                 },
               ]}
               href={href}
@@ -116,8 +108,7 @@ const iconLinks: {
                 {
                   active:
                     Astro.url.pathname === href ||
-                    (href !== translatedPath('/', lang) &&
-                      Astro.url.pathname.startsWith(href)),
+                    (href !== l('/') && Astro.url.pathname.startsWith(href)),
                 },
               ]}
               href={href}
