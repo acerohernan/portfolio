@@ -1,72 +1,78 @@
 ---
-import Icon from './Icon.astro';
+import { l } from 'astro-i18n';
+
 const currentYear = new Date().getFullYear();
 ---
 
 <footer>
-	<div class="group">
-		<p>&copy; {currentYear} Hernan Acero</p>
-	</div>
-	<p class="socials">
-		<a href="/cv.pdf" target="_blank">CV</a>
-		<a href="https://www.linkedin.com/in/hernan-acero/" target="_blank">LinkedIn</a>
-		<a href="https://github.com/acerohernan" target="_blank">GitHub</a>
-		<a href="https://twitter.com/HernanAcero10" target="_blank">Twitter</a>
-		<a href="https://www.youtube.com/channel/UCEdYczq1P-nJzdE7xYHfK5g" target="_blank">Youtube</a>
-	</p>
+  <div class="group">
+    <p>&copy; {currentYear} Hernan Acero</p>
+  </div>
+  <p class="socials">
+    <a href={l('/cv.pdf')} target="_blank">CV</a>
+    <a href="https://www.linkedin.com/in/hernan-acero/" target="_blank"
+      >LinkedIn</a
+    >
+    <a href="https://github.com/acerohernan" target="_blank">GitHub</a>
+    <a href="https://twitter.com/HernanAcero10" target="_blank">Twitter</a>
+    <a
+      href="https://www.youtube.com/channel/UCEdYczq1P-nJzdE7xYHfK5g"
+      target="_blank">Youtube</a
+    >
+  </p>
 </footer>
 <style>
-	footer {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-		margin-top: auto;
-		padding: 3rem 2rem 3rem;
-		text-align: center;
-		color: var(--gray-400);
-		font-size: var(--text-sm);
-	}
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: auto;
+    padding: 3rem 2rem 3rem;
+    text-align: center;
+    color: var(--gray-400);
+    font-size: var(--text-sm);
+  }
 
-	footer a {
-		color: var(--gray-400);
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
+  footer a {
+    color: var(--gray-400);
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+  }
 
-	footer a:hover,
-	footer a:focus {
-		text-decoration-color: currentColor;
-	}
+  footer a:hover,
+  footer a:focus {
+    text-decoration-color: currentColor;
+  }
 
-	.group {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
+  .group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 
-	.socials {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
 
-	@media (min-width: 50em) {
-		footer {
-			flex-direction: row;
-			justify-content: space-between;
-			padding: 2.5rem 5rem;
-		}
+  @media (min-width: 50em) {
+    footer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2.5rem 5rem;
+    }
 
-		.group {
-			flex-direction: row;
-			gap: 1rem;
-			flex-wrap: wrap;
-		}
+    .group {
+      flex-direction: row;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
 
-		.socials {
-			justify-content: flex-end;
-		}
-	}
+    .socials {
+      justify-content: flex-end;
+    }
+  }
 </style>
