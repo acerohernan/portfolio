@@ -57,7 +57,7 @@ Once I had the features that I wanted to implement and all the technical challen
 3. In-memory Database: For real-time communication, I needed a fast and efficient database that can store all the state that I wanted to share across all servers, for example, which one is hosting a specific room or which one has a connection with a specific participant. Knowing that the state doesn’t need to be persistent and it has to be only available while a room is active, I chose to use an in-memory database like Redis.
 4. Message Queue: For having the ability to scale each server horizontally and support the maximum amount of participants connected at the same time in a specific room, each server will be subscribed to a specific queue that will receive real-time messages from other servers. This approach will allow balance the load of incoming messages avoiding overloading the server.
 
-#### AWS system design
+#### AWS System Design
 
 After the system design is completed it’s time to choose the cloud provider and what components will help me create the infrastructure.
 
