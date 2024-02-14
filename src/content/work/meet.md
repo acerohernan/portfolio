@@ -8,9 +8,9 @@ description: |
   Full-stack video conference application with multi-region deployment. Frontend in React.js and backend with Go.
 tags:
   - System Design
-  - Frontend
-  - Backend
-  - Devops
+  - React.js
+  - Go
+  - DevOps
   - AWS
 ---
 
@@ -24,7 +24,7 @@ Github: <a href="https://github.com/acerohernan/meet">https://github.com/acerohe
 
 #### Overview
 
-I’ve always been amazed seeing how Google Meet allows us to communicate with people form all over the world, so I decided to make an open source project that replicates its functionality and allows to scale to the maximum number of users as possible.
+I’ve always been amazed seeing how Google Meet allows us to communicate with people from all over the world, so I decided to make an open source project that replicates its functionality and allows to scale to the maximum number of users as possible.
 
 #### Features
 

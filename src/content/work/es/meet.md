@@ -8,9 +8,9 @@ description: |
   Aplicación full-stack de video conferencia con despliegue en multiples regiones. Frontend realizado con React.js, backend con Go y despliegue en Amazon Web Services.
 tags:
   - Diseño de sistema
-  - Frontend
-  - Backend
-  - Devops
+  - React.js
+  - Go
+  - DevOps
   - AWS
 ---
 
