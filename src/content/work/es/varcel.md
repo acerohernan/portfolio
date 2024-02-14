@@ -2,15 +2,20 @@
 title: Varcel
 publishDate: 2020-03-02 00:00:00
 img: /assets/projects/varcel/banner.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
-lang: es
+img_alt: banner del projecto varcel donde se muestra la pantalla de la aplicación para desplegar un proyecto
+lang: en
 description: |
-  Full-stack infrastructure as a service application (Vercel clone). Frontend in React.js and backend in Node.js.
+  Aplicación full-stack de infraestructura como servicio (Clon de Vercel). Frontend con React.js, backend con Node.js y despliegue en AWS.
 tags:
-  - Diseño
-  - Desarollo
-  - Pruebas unitarias
+  - Diseño de Sistema
+  - React.js
+  - Node.js
+  - DevOps
+  - AWS
 ---
+
+### Aplicación full-stack de infraestructura como servicio (Clon de Vercel)
+
 
 ## Level-two heading
 
