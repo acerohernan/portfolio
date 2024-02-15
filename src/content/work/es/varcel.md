@@ -3,7 +3,7 @@ title: Varcel
 publishDate: 2020-03-02 00:00:00
 img: /assets/projects/varcel/banner.jpg
 img_alt: banner del projecto varcel donde se muestra la pantalla de la aplicación para desplegar un proyecto
-lang: en
+lang: es
 description: |
   Aplicación full-stack de infraestructura como servicio (Clon de Vercel). Frontend con React.js, backend con Node.js y despliegue en AWS.
 tags:
