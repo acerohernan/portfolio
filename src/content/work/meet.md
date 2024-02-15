@@ -18,9 +18,9 @@ tags:
 
 #### Links
 
-Demo: <a href="https://meet.acerohernan.com">https://meet.acerohernan.com</a>
+Demo: <a href="https://meet.acerohernan.com" target="_blank">https://meet.acerohernan.com</a>
 
-Github: <a href="https://github.com/acerohernan/meet">https://github.com/acerohernan/meet</a>
+Github: <a href="https://github.com/acerohernan/meet" target="_blank">https://github.com/acerohernan/meet</a>
 
 #### Overview
 
