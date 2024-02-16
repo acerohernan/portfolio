@@ -49,7 +49,7 @@ As we know, every feature that needs to be implemented comes with the responsibi
 
 #### System Design
 
-Una vez que tuve las características que quería implementar y todos los desafíos técnicos que necesitaba tener en cuenta, comencé a crear un diseño de sistema independiente de la nube para definir todos los componentes que necesitaría la aplicación.
+Once I had the features I wanted to implement and all the technical challenges I needed to consider, I created a cloud-agnostic system design to define all the components the application would need.
 
 <img src="/assets/projects/varcel/system-design.jpeg" alt="meet system design diagram" />
 
