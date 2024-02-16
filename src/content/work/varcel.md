@@ -32,7 +32,7 @@ The main features implemented are:
 
 - Allow users to log in using their GitHub accounts.
 - Provide users with a GitHub App for creating a seamless integration with their public and private repositories in GitHub
-- Allow users to select a repository with front-end application code and deploy it to the cloud with only one click
+- Allow users to select a repository and deploy it to the cloud with only one click
 - Allow users to see the build and deployment logs in real-time from Varcel’s deployment page
 - After a successful deployment, provide a unique link to users for accessing their application from all over the world.
 - Allow users to automatically trigger a deployment each time there’s a new code pushed to the repository
@@ -41,10 +41,10 @@ The main features implemented are:
 
 As we know, every feature that needs to be implemented comes with the responsibility of evaluating trade-offs for each possible solution. In this case, I had the next difficulties:
 
-- A performant front-end application that provides a unique user experience for deploying and managing all the user’s projects.
-- An API-REST service that authenticates users with GitHub, stores users’ information like projects and deployments, and queues users’ deployments
+- A front-end application that provides a good user experience and allows a seamless communicacion with the API REST service and the real-time service.
+- An API-REST service that authenticates users with GitHub, stores users’ information like projects and deployments, and queues pending users’ deployments.
 - A real-time service that can scale horizontally using a stateful protocol like WebSockets and can show the build and deployment logs in real-time to the users.
-- A service that can have a secure public endpoint for listening to GitHub events e.g. when new code is pushed or when a new pull request is created. (Webhook)
+- A service that has a secure public endpoint for listening to new GitHub events e.g. when new code is pushed or when a new pull request is created. (Webhook)
 - A content delivery network (CDN) for every user to distribute all their applications to all over the world. It’s important to have a CDN for each one to control their usage and bill them correctly.
 
 #### System Design
@@ -56,8 +56,8 @@ Una vez que tuve las características que quería implementar y todos los desaf�
 1. Client: A multi-platform front-end application that allows the correct communication with the API REST and the real-time service.
 2. API REST service: The service that provides social authentication with a GitHub account, handles the reads and writes of the user’s information to the database, and queues the projects to be deployed for the builder service. 
 3. Builder service: The service in charge of downloading the code from the GitHub repository, building the code bundle, and deploying all the required infrastructure to host it in the cloud. It consumes the pending tasks from the message queue to avoid overloading the service. 
-4. Real-time service: The service in charge of sending the logs from the builder service to the client application in real-time. Also, it will allow the bi-directional communication between the client and the builder service.
-5. Webhook: Public endpoint that will only listen for new GitHub events on the user’s accounts for triggering new deployments. 
+4. Real-time service: The service in charge of sending the logs from the builder service to the front-end application in real-time. Also, it will allow the bi-directional communication between the front-end and the builder service.
+5. Webhook: Public endpoint that only listens for new GitHub events on the user’s accounts for triggering new deployments. 
 6. CDN: A content delivery network specific for the user, to allow distributing the user’s application all over the world
 
 #### AWS System Design
