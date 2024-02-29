@@ -28,21 +28,29 @@ const projects = (
     </div>
 
     <main class="wrapper stack gap-20 lg:gap-48">
-      <section class="section with-background">
+      <section class="with-background">
         <header class="section-header stack gap-2 lg:gap-4 about">
           <h3>{t('about.title')}</h3>
-          <!-- TODO: Link to youtube video -->
-          <!-- <img
-					width="1553"
-					height="873"
-					src="/assets/at-work.jpg"
-					alt="Hernan Acero at work with a colleague"
-					/> -->
-          <li class="img-placeholder">
-            <p>{t('about.commingsoon')}</p>
-          </li>
-          <p>
-            {t('about.description')}
+          <p class="about-paragraph">
+            Soy un desarrollador Full-stack bilingue (C1 English level) con más
+            de 3 años de experiencia profesional siendo parte de cada una de las
+            fases del desarrollo web, liderando procesos como el prototipado en
+            Figma, construcción de la aplicación front-end, desarrollo de los
+            servicios back-end, despligue y mantenimiento de los servicios y
+            componentes de infraestructura en el proveedor de nube elegido por
+            la empresa, en su mayoría, AWS.
+            <br />
+            <br />
+            Las tecnologías con las que tengo más experiencia profesional son:
+            <br />
+            <br />
+            Front-end: React.js, Next.js, Typescript, Storybook, Jest, Cypress
+            <br />
+            Back-end: Node.js, Express.js, Nest.js, Go, Docker, Kubernetes
+            <br />
+            Bases de datos: PostgreSQL, MySQL, SQLServer, MongoDB, DynamoDB
+            <br />
+            Proveedores de nube: AWS y Google Cloud.
           </p>
         </header>
       </section>
@@ -72,29 +80,6 @@ const projects = (
           </CallToAction>
         </div>
       </section>
-
-      <!--  <section class="section with-background bg-variant">
-        <header class="section-header stack gap-2 lg:gap-4">
-          <h3>{t('experience.title')}</h3>
-        </header>
-        <div class="gallery">
-          <Grid variant="small">
-            {
-              [
-                'Medium',
-                'BuzzFeed',
-                'The Next Web',
-                'awwwards.',
-                'TechCrunch',
-              ].map((brand) => (
-                <li class="mention-card">
-                  <p>{brand}</p>
-                </li>
-              ))
-            }
-          </Grid>
-        </div>
-      </section> -->
     </main>
 
     <ContactCTA />
@@ -138,7 +123,6 @@ const projects = (
   .section-header {
     justify-self: center;
     text-align: center;
-    max-width: 50ch;
     font-size: var(--text-md);
     color: var(--gray-300);
   }
@@ -157,6 +141,12 @@ const projects = (
     margin-top: 1.5rem;
     border-radius: 1.5rem;
     box-shadow: var(--shadow-md);
+  }
+
+  .about-paragraph {
+    text-align: start;
+    max-width: 80ch;
+    margin: 0 auto;
   }
 
   @media (min-width: 50em) {
