@@ -11,6 +11,7 @@ export const collections = {
 			img: z.string(),
 			img_alt: z.string().optional(),
 			lang: z.string(),
+			hide: z.boolean().default(false),
 		}),
 	}),
 };

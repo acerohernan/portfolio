@@ -10,7 +10,10 @@ import Hero from '../../components/Hero.astro';
 import Grid from '../../components/Grid.astro';
 
 const projects = (
-  await getCollection('work', ({ data }) => data.lang === astroI18n.locale)
+  await getCollection(
+    'work',
+    ({ data }) => data.lang === astroI18n.locale && !data.hide
+  )
 ).sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
 ---
 
