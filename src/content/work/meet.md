@@ -12,6 +12,7 @@ tags:
   - Go
   - DevOps
   - AWS
+hide: true
 ---
 
 ### Video conferencing real-time application
