@@ -12,6 +12,7 @@ tags:
   - Node.js
   - DevOps
   - AWS
+hide: true
 ---
 
 ### Full-stack infrastructure as a service application (Vercel clone).
