@@ -1,25 +1,21 @@
 ---
-title: MiTienda Español
-publishDate: 2019-12-01 00:00:00
+title: MiTienda
+publishDate: 2024-01-20 00:00:00
 img: /assets/projects/mitienda/banner.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img_alt: Captura de pantalla de la página de login
 lang: es
 description: |
   Full-stack store management application with infrastructure in AWS. Frontend with React.js, backend with Node.js and infrastructure as code with AWS CDK.
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - React.js
+  - Node.js
+  - AWS
 ---
 
-#### Links
+Demo: <a href="https://mitienda.acerohernan.com" target="_blank">https://mitienda.acerohernan.com</a>
 
-Demo: Pronto en línea...
+Github: <a href="https://github.com/acerohernan/mitienda" target="_blank">https://github.com/acerohernan/mitienda</a>
 
-Frontend Github: <a href="https://github.com/acerohernan/mitienda-frontend" target="_blank">https://github.com/acerohernan/mitienda-frontend</a>
+#### Descripción
 
-Backend Github: <a href="https://github.com/acerohernan/mitienda-backend" target="_blank">https://github.com/acerohernan/mitienda-backend</a>
-
-#### Overview
-
-Aplicación full-stack que permite la creación de una tienda en línea creando una cuenta solamente con correo electrónico. Tiene un dashboard para poder agregar, eliminar y editar la información de tus productos. Así como también, te asigna un subdominio donde se va a encontrar alojada tu tienda virtual. Cada pedido realizado es enviado directamente al Whatsapp del dueño del negocio.
+Aplicación web que te permite crear una tienda online con tu correo electrónico. Tienes un panel de control donde puedes ver los productos. También puede agregar, eliminar o actualizar la información de sus productos. Además, la aplicación te asignará un subdominio donde se alojará tu tienda online y todos los pedidos se enviarán al Whatsapp del propietario de la aplicación.
