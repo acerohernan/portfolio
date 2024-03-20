@@ -5,7 +5,7 @@ img: /assets/projects/veet/banner.jpg
 img_alt: Screenshot of video conferencing page with two users
 lang: es
 description: |
-  Real-time video conferencing application inspired by Google Meet. Made with React.js, Livekit, Node.js and deployed to AWS.
+  Aplicación de videoconferencia en tiempo real inspirada en Google Meet. Hecho con React.js, Livekit, Node.js e implementado en AWS
 tags:
   - React.js
   - Livekit
