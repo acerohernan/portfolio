@@ -18,6 +18,6 @@ Demo: <a href="https://docs.acerohernan.com" target="_blank">https://docs.aceroh
 
 Github: <a href="https://github.com/acerohernan/docs" target="_blank">https://github.com/acerohernan/docs</a>
 
-#### Overview
+#### Descripción
 
-I’ve always been amazed seeing how Google Meet allows us to communicate with people from all over the world, so I decided to make an open source project that replicates its functionality and allows to scale to the maximum number of users as possible.
+Es interesante ver cómo Google Docs puede proporcionar cambios en tiempo real en sus documentos sin conflictos. Decidí replicarlo y construí Docs, una aplicación con documentos completamente funcional que permite modificaciones en tiempo real para muchos usuarios. Además, tiene muchos estilos de texto para agregar. Puedes probarlo en el enlace de demostración.
