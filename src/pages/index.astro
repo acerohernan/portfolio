@@ -33,25 +33,31 @@ const projects = (
         <header class="section-header stack gap-2 lg:gap-4 about">
           <h3>{t('about.title')}</h3>
           <p class="about-paragraph">
-            I am a bilingual Full-stack developer (C1 English level) with more
-            than 3 years of professional experience being part of each phase of
-            the web development, leading processes such as prototyping in Figma,
-            building the front-end application, developing the back-end
-            services, deploying and mantaining the services and infrastructure
-            components in the cloud provider chosen by the company, mostly, AWS
-            and Google Cloud.
+            Full Stack developer specialized in Javascript with 3 years of
+            professional experience developing web applications from scratch and
+            maintaining existing applications with technologies such as <bold
+              >React.js and Angular.js</bold
+            > on the frontend, <bold>
+              Node.js, Express.js, Nest.js and Docker
+            </bold> in the backend. I have worked with Amazon Web Services as a primary
+            cloud provider and also have experience with Google Cloud. In databases,
+            I have experience with<bold>
+              MySQL, PostgreSQL, SQL Server and MongoDB.</bold
+            >
             <br />
             <br />
             The technologies that I have the most professional experience are:
             <br />
+            Front-end: <bold
+              >React.js, Next.js, Typescript, Angular.js, Storybook, Jest,
+              Cypress</bold
+            >
             <br />
-            Front-end: React.js, Next.js, Typescript, Storybook, Jest, Cypress
+            Back-end: <bold>Node.js, Express.js, Nest.js, Go, Docker</bold>
             <br />
-            Back-end: Node.js, Express.js, Nest.js, Go, Docker, Kubernetes
+            Databases: <bold>PostgreSQL, MySQL, SQLServer, MongoDB</bold>
             <br />
-            Databases: PostgreSQL, MySQL, SQLServer, MongoDB, DynamoDB
-            <br />
-            Cloud providers: AWS and Google Cloud.
+            Cloud providers: <bold>AWS y Google Cloud.</bold>
           </p>
         </header>
       </section>
@@ -148,6 +154,11 @@ const projects = (
     text-align: start;
     max-width: 80ch;
     margin: 0 auto;
+    color: white;
+  }
+
+  .about-paragraph bold {
+    font-weight: bold;
   }
 
   @media (min-width: 50em) {

@@ -33,25 +33,31 @@ const projects = (
         <header class="section-header stack gap-2 lg:gap-4 about">
           <h3>{t('about.title')}</h3>
           <p class="about-paragraph">
-            Soy un desarrollador Full-stack bilingue (C1 English level) con más
-            de 3 años de experiencia profesional siendo parte de cada una de las
-            fases del desarrollo web, liderando procesos como el prototipado en
-            Figma, construcción de la aplicación front-end, desarrollo de los
-            servicios back-end, despliegue y mantenimiento de los servicios y
-            componentes de infraestructura en el proveedor de nube elegido por
-            la empresa, en su mayoría, AWS y Google Cloud.
+            Desarrollador Full Stack especializado en Javascript con 3 años de
+            experiencia profesional desarrollando aplicaciones web desde cero y
+            dando mantenimiento a aplicaciones existentes con tecnologías como
+            <bold>React.js y Angular.js</bold> en el frontend, <bold>
+              Node.js, Express.js, Nest.js y Docker</bold
+            > en el backend. He trabajado con Amazon Web Services como principal
+            proveedor de nube y también tengo experiencia con Google Cloud. En base
+            de datos, tengo experiencia con <bold
+              >MySQL, PostgreSQL, SQL Server y MongoDB.</bold
+            >
             <br />
             <br />
             Las tecnologías con las que tengo más experiencia profesional son:
             <br />
             <br />
-            Front-end: React.js, Next.js, Typescript, Storybook, Jest, Cypress
+            Front-end: <bold
+              >React.js, Next.js, Typescript, Angular.js, Storybook, Jest,
+              Cypress</bold
+            >
             <br />
-            Back-end: Node.js, Express.js, Nest.js, Go, Docker, Kubernetes
+            Back-end: <bold>Node.js, Express.js, Nest.js, Go, Docker</bold>
             <br />
-            Bases de datos: PostgreSQL, MySQL, SQLServer, MongoDB, DynamoDB
+            Bases de datos: <bold>PostgreSQL, MySQL, SQLServer, MongoDB</bold>
             <br />
-            Proveedores de nube: AWS y Google Cloud.
+            Proveedores de nube: <bold>AWS y Google Cloud.</bold>
           </p>
         </header>
       </section>
@@ -148,6 +154,11 @@ const projects = (
     text-align: start;
     max-width: 80ch;
     margin: 0 auto;
+    color: white;
+  }
+
+  .about-paragraph bold {
+    font-weight: bold;
   }
 
   @media (min-width: 50em) {
